@@ -11,6 +11,10 @@ function Navbar() {
 
   const showSidebar = () => setSidebar(!sideBar);
 
+  const darkmode = () => {
+    
+  }
+
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
@@ -43,7 +47,7 @@ function Navbar() {
                 Albert<span style={{ color: "#d0051b"}}>.</span>
             </a>
             <div className="nav-darkmode">
-              <FiMoon />
+              <FiMoon onClick={darkmode()} />
             </div>
           </div>
         </div>
