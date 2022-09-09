@@ -1,13 +1,71 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root{
+  --sm-width : 90%;
+  --md-width : 85%;
+  --lg-width : 80%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  margin: 0;
+  padding : 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
+
+body {
+  margin: 0;
+  background-color: #121212;
+  font-family: 'Poppins', sans-serif;
+  /* overflow: hidden; */
+}
+
+li{
+  list-style:none;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+  display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:#333333;
+  width:10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #121212; 
+}
+
+/* .container{
+    max-width: 1240px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--lg-width);
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: var(--md-width);
+  }
+}
+@media screen and (max-width: 425px) {
+  .container {
+    width: var(--sm-width);
+  }
+} */
