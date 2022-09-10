@@ -88,7 +88,7 @@ const Home = () => {
           to stop learning until all goals achieved. Feel free to download my CV
           in the link below.
         </p>
-        <a href="../../assets/Cv/Resume.pdf" download>
+        <a href="../../assets/Resume.pdf" download>
           Download CV
         </a>
       </div>
