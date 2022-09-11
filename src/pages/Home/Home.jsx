@@ -8,8 +8,12 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import { db } from "../../firebase";
 import { collection, addDoc } from "firebase/firestore";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Home = () => {
+  AOS.init();
+
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -38,7 +42,7 @@ const Home = () => {
   return (
     <main>
       <div className="home" id="home">
-        <div className="home-content">
+        <div className="home-content" data-aos='fade-right'>
           <h5>Hello, It's Me</h5>
           <h6 className="typewriter-effect">
             <Typewriter
@@ -73,12 +77,12 @@ const Home = () => {
             </span>
           </a>
         </div>
-        <div className="home-img">
+        <div className="home-img" data-aos='fade-left'>
           <img src={photo} alt="" />
         </div>
       </div>
 
-      <div className="about" id="about">
+      <div className="about" id="about" data-aos='fade-up'>
         <h1>About</h1>
         <p>
           Full Time Student in Binus University. Currently learning React
@@ -93,20 +97,20 @@ const Home = () => {
         </a>
       </div>
 
-      <div className="portfolio" id="portfolio">
+      <div className="portfolio" id="portfolio" data-aos='fade-up'>
         <h1>Portfolio</h1>
         <p className="port-header-text">Here are some of my works</p>
         <div className="portfolioContainer">
           {portfolioData.map((item, index) => {
             return (
               <div key={index} className="port-wrapper">
-                <div className="port-img">
+                <a className="port-img" href={item.link}>
                   <img
                     src={require("../../assets/img/PortfolioImage/" +
                       item.image +
                       ".png")}
                   />
-                </div>
+                </a>
                 <div className="port-text">
                   <h4>{item.title}</h4>
                   <h6>{item.type}</h6>
@@ -119,7 +123,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="contact" id="contact">
+      <div className="contact" id="contact" data-aos='fade-up'>
         <h1>Contact Me</h1>
         <p>Don't Be Shy, Let's Talk !!</p>
         <form onSubmit={formik.handleSubmit}>

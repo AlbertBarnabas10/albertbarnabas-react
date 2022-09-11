@@ -1,5 +1,3 @@
-import React from 'react'
-
 export const portfolioData = [
     {
         image : 'Growup',
@@ -7,6 +5,7 @@ export const portfolioData = [
         type: 'Competition',
         description : 'Grow Up is an Online Mentoring Application based on Learning Management System.',
         role : 'UI/UX Desinger',
+        link : 'https://growup.ndaruhes.com/'
     },
     {
         image: 'Hansanesia',
@@ -14,6 +13,7 @@ export const portfolioData = [
         type: 'Real Client',
         description: 'Hansanesia Products is a Product Showcase Website.',
         role: 'UI Designer and Developer',
+        link : 'https://www.rboutdoorliving.com/'
     },
     {
         image: 'FiPlanner',
@@ -21,5 +21,6 @@ export const portfolioData = [
         type: 'Competition',
         description: 'FiPlanner is a Online Financial Planner Application where users can do Finance Planning by themselves or Through Expert Consultation.',
         role: 'UI Designer and Developer',
+        link : '/'
     }
 ]

@@ -59,6 +59,11 @@
     align-items: center;
     padding: 20px 16px;
     border-radius: 8px;
+    transition: all .7s;
+}
+
+.nav-text a:hover{
+    color: #d0051de7;
 }
 
 .nav-menu-items{
