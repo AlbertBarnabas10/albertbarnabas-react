@@ -22,15 +22,15 @@ const Home = () => {
         .required("Required !"),
       email: Yup.string().email("Invalid Email").required("Required !"),
     }),
-    onSubmit: (values, {resetForm})=> {
-      const users = collection(db, 'contactinfo');
+    onSubmit: (values, { resetForm }) => {
+      const users = collection(db, "contactinfo");
 
-      addDoc(users,{
-        username : formik.values.name,
-        useremail : formik.values.email,
-        usermessage : formik.values.message,
-      })
-      alert('Form Submitted!')
+      addDoc(users, {
+        username: formik.values.name,
+        useremail: formik.values.email,
+        usermessage: formik.values.message,
+      });
+      alert("Form Submitted!");
       resetForm();
     },
   });
@@ -88,7 +88,7 @@ const Home = () => {
           to stop learning until all goals achieved. Feel free to download my CV
           in the link below.
         </p>
-        <a href="../../assets/Resume.pdf" download>
+        <a href={require("../../assets/Resume.pdf")} download="Albert's Resume">
           Download CV
         </a>
       </div>
