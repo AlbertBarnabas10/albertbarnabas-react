@@ -265,6 +265,13 @@
   justify-content: center;
 }
 
+/* .portfolio .port-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+} */
+
 .portfolio h1 {
   font-size: 55px;
   color: #fff;
@@ -358,6 +365,25 @@
   font-size: 12px;
 }
 
+.port-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 28px;
+  color: #fff;
+  background-color: #d0051b;
+  font-size: 18px;
+  opacity: 0.7;
+  transition: 0.7s;
+  cursor: pointer;
+  border:none;
+  max-width: 300px;
+}
+
+.port-btn:hover{
+  opacity: 1;
+}
+
 @media screen and (max-width: 1024px) {
   .portfolio {
     max-width: 80%;
@@ -374,6 +400,10 @@
   .port-wrapper {
     width: 100%;
   }
+
+  .port-btn{
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -388,11 +418,18 @@
   .portfolio .port-header-text {
     font-size: 18px;
   }
+
+  .port-btn{
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 426px) {
   .portfolio {
     max-width: 90%;
+  }
+  .port-btn{
+    font-size: 12px;
   }
 }
 

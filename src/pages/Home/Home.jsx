@@ -121,6 +121,9 @@ const Home = () => {
             );
           })}
         </div>
+        <a href={require("../../assets/Projects Portfolio.pdf")} download="Albert Portfolio" className="port-btn">
+          Download Portfolio
+        </a>
       </div>
 
       <div className="contact" id="contact" data-aos='fade-up'>

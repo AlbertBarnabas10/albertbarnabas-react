@@ -47,7 +47,7 @@ function Navbar() {
                 Albert<span style={{ color: "#d0051b"}}>.</span>
             </a>
             <div className="nav-darkmode">
-              <FiMoon onClick={darkmode} />
+                <FiMoon />
             </div>
           </div>
         </div>
