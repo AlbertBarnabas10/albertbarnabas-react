@@ -92,7 +92,7 @@ const Home = () => {
           to stop learning until all goals achieved. Feel free to download my CV
           in the link below.
         </p>
-        <a href={require("../../assets/Resume.pdf")} download="Albert's Resume">
+        <a href={require("../../assets/AlbertBarnabas Resume.pdf")} download="Albert's Resume">
           Download CV
         </a>
       </div>
