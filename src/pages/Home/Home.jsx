@@ -10,6 +10,7 @@ import { db } from "../../firebase";
 import { collection, addDoc } from "firebase/firestore";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   AOS.init();
@@ -40,7 +41,7 @@ const Home = () => {
   });
 
   return (
-    <main>
+    <main className="main">
       <div className="home" id="home">
         <div className="home-content" data-aos='fade-right'>
           <h5>Hello, It's Me</h5>
@@ -121,7 +122,7 @@ const Home = () => {
             );
           })}
         </div>
-        <a href={require("../../assets/Projects Portfolio.pdf")} download="Albert Portfolio" className="port-btn">
+        <a href={require("../../assets/Personal Projects Portfolio.pdf")} download="Albert Portfolio" className="port-btn">
           Download Portfolio
         </a>
       </div>
@@ -172,6 +173,8 @@ const Home = () => {
           <button className="contact-btn">Send Message</button>
         </form>
       </div>
+
+      <Footer/>
     </main>
   );
 };

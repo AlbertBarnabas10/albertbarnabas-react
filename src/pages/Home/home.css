@@ -16,7 +16,7 @@
 }
 
 .home-content h5 {
-  color: rgb(216, 216, 216);
+  color: var(--text);
 }
 
 .home-content h5 {
@@ -24,7 +24,7 @@
 }
 
 .home-content h1 {
-  color: rgb(255, 255, 255);
+  color: var(--white);
   font-size: 55px;
   margin-bottom: 8px;
   /* transition: .5s ease; */
@@ -36,13 +36,13 @@
 } */
 
 .home-content .typewriter-effect {
-  color: #d0051b;
+  color: var(--primary);
   font-size: 18px;
   margin-top: 10px;
 }
 
 .home-content p {
-  color: rgb(216, 216, 216);
+  color: var(--text);
   text-align: justify;
   width: 95%;
   letter-spacing: 0.7px;
@@ -73,12 +73,12 @@
 .home-btn {
   /* background-color: #d0051b; */
   font-size: 12px;
-  color: #fff;
+  color: var(--white);
   padding: 10px 20px 10px 0;
   display: flex;
   align-items: center;
   width: 30%;
-  border-bottom: 1.5px solid #d0051b;
+  border-bottom: 1.5px solid var(--primary);
   margin-top: 12px;
   opacity: 50%;
   transition: 0.7s ease;
@@ -92,12 +92,12 @@
   border-bottom: 1.5px solid rgba(255, 255, 255, 0.61);
   opacity: 100%;
   font-size: 16px;
-  color: #d0051de7;
+  color: var(--primary);
 }
 
 @media screen and (max-width: 1024px) {
   .home {
-    max-width: 80%;
+    max-width: var(--lg-width);
   }
   .home-content h1 {
     font-size: 40px;
@@ -112,7 +112,7 @@
 
 @media screen and (max-width: 768px) {
   .home {
-    max-width: 85%;
+    max-width: var(--md-width);
   }
   .home-content h1 {
     font-size: 35px;
@@ -130,7 +130,7 @@
 
 @media screen and (max-width: 426px) {
   .home {
-    max-width: 90%;
+    max-width: var(--sm-width);
   }
   .home-content {
     width: 100%;
@@ -173,7 +173,7 @@
 
 .about h1 {
   font-size: 55px;
-  color: #fff;
+  color: var(--white);
   margin-bottom: 10px;
 }
 
@@ -183,19 +183,19 @@
   /* width: 80%; */
   line-height: 45px;
   text-align: justify;
-  color: rgb(216, 216, 216);
+  color: var(--text);
 }
 
 .about a {
   font-size: 18px;
-  background-color: #d0051b;
+  background-color: var(--primary);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 18px 28px;
   opacity: 0.7;
   transition: 0.7s;
-  color: #fff;
+  color: var(--white);
   margin-top: 20px;
 }
 
@@ -210,7 +210,7 @@
 
 @media screen and (max-width: 1024px) {
   .about {
-    max-width: 80%;
+    max-width: var(--lg-width);
   }
   .about h1 {
     font-size: 40px;
@@ -226,7 +226,7 @@
 
 @media screen and (max-width: 768px) {
   .about {
-    max-width: 85%;
+    max-width: var(--md-width);
   }
   .about h1 {
     font-size: 35px;
@@ -241,7 +241,7 @@
 
 @media screen and (max-width: 426px) {
   .about {
-    max-width: 90%;
+    max-width: var(--sm-width);
   }
   .about h1 {
     font-size: 30px;
@@ -258,28 +258,20 @@
 .portfolio {
   max-width: 1024px;
   margin: auto;
-  /* background-color:#fff; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-/* .portfolio .port-btn{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-} */
-
 .portfolio h1 {
   font-size: 55px;
-  color: #fff;
+  color: var(--white);
 }
 
 .portfolio .port-header-text {
   font-size: 24px;
-  color: rgb(216, 216, 216);
+  color: var(--text);
   margin-bottom: 10px;
 }
 
@@ -288,7 +280,6 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 10px 0;
-  /* margin: auto; */
 }
 
 .port-wrapper {
@@ -297,7 +288,6 @@
   margin-bottom: 30px;
   padding: 4px;
   flex-direction: column;
-  /* transition: all 5s; */
 }
 
 .port-img {
@@ -340,23 +330,22 @@
 .port-wrapper h4 {
   font-size: 24px;
   margin-top: 5px;
-  color: #fff;
+  color: var(--white);
 }
 
 .port-wrapper h6 {
-  color: #d0051b;
+  color: var(--primary);
   font-size: 12px;
   margin-bottom: 8px;
 }
 
 .port-wrapper p {
-  color: rgb(216, 216, 216);
+  color: var(--text);
   font-size: 15px;
-  /* text-align: justify; */
 }
 
 .port-wrapper span {
-  background-color: #d0051b;
+  background-color: var(--primary);
   color: #fff;
   display: inline-block;
   border-radius: 8px;
@@ -370,8 +359,8 @@
   align-items: center;
   justify-content: center;
   padding: 18px 28px;
-  color: #fff;
-  background-color: #d0051b;
+  color: var(--white);
+  background-color: var(--primary);
   font-size: 18px;
   opacity: 0.7;
   transition: 0.7s;
@@ -386,7 +375,7 @@
 
 @media screen and (max-width: 1024px) {
   .portfolio {
-    max-width: 80%;
+    max-width: var(--lg-width);
   }
 
   .portfolio h1 {
@@ -408,7 +397,7 @@
 
 @media screen and (max-width: 768px) {
   .portfolio {
-    max-width: 85%;
+    max-width: var(--md-width);
   }
 
   .portfolio h1 {
@@ -426,7 +415,7 @@
 
 @media screen and (max-width: 426px) {
   .portfolio {
-    max-width: 90%;
+    max-width: var(--sm-width);
   }
   .port-btn{
     font-size: 12px;
@@ -437,7 +426,6 @@
 .contact {
   max-width: 1024px;
   margin: auto;
-  /* background-color:#fff; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -446,12 +434,12 @@
 
 .contact h1 {
   font-size: 55px;
-  color: #fff;
+  color: var(--white);
 }
 
 .contact p {
   font-size: 24px;
-  color: rgb(216, 216, 216);
+  color: var(--text);
   margin-bottom: 10px;
 }
 
@@ -459,34 +447,33 @@
   display: flex;
   flex-direction: column;
   width: 95%;
-  /* background-color: #fff; */
   margin: 10px 0 35px 0;
 }
 
 .contact-input-container input {
   width: 100%;
-  background-color: #121212;
+  background-color: var(--background-color);
   outline: none;
   border: none;
-  color: #fff;
+  color: var(--white);
   font-size: 18px;
   padding: 5px 0 15px 10px;
   transition: 0.7s;
 }
 
 .contact-input-container input {
-  border-bottom: 1px solid rgb(216, 216, 216);
+  border-bottom: 1px solid var(--text);
 }
 
 .contact-input-container input:focus {
-  border-bottom: 3px solid #d0051b;
+  border-bottom: 3px solid var(--primary);
 }
 
 .contact-input-text {
   display: flex;
   width: 95%;
   margin-bottom: 20px;
-  /* background-color: #fff; */
+  background-color: var(--background-color);
 }
 
 .contact-input-text textarea {
@@ -496,33 +483,33 @@
   /* background-color: #000; */
   outline: none;
   border: none;
-  color: #fff;
+  color: var(--white);
   font-size: 18px;
   padding: 5px 0 8px 10px;
   resize: none;
-  color: rgb(216, 216, 216);
+  color: var(--text);
   transition: 0.7s;
 }
 
 .contact-input-text textarea {
-  border-bottom: 1px solid rgb(216, 216, 216);
+  border-bottom: 1px solid var(--text);
 }
 
 .contact-input-text textarea:focus {
-  border-bottom: 3px solid #d0051b;
+  border-bottom: 3px solid var(--primary);
 }
 
 .contact span{
   margin: 0;
-  color: #d0051b;
+  color: var(--primary);
   padding: 5px 0 0 10px; 
 }
 
 .contact-btn {
   display: block;
   padding: 18px 28px;
-  color: #fff;
-  background-color: #d0051b;
+  color: var(--white);
+  background-color: var(--primary);
   font-size: 18px;
   opacity: 0.7;
   transition: 0.7s;
@@ -536,7 +523,7 @@
 
 @media screen and (max-width: 1024px) {
   .contact {
-    max-width: 80%;
+    max-width: var(--lg-width);
   }
   .contact h1 {
     font-size: 40px;
@@ -551,7 +538,7 @@
 
 @media screen and (max-width: 768px) {
   .contact {
-    max-width: 85%;
+    max-width: var(--md-width);
   }
   .contact h1 {
     font-size: 35px;
@@ -566,6 +553,6 @@
 
 @media screen and (max-width: 426px) {
   .contact {
-    max-width: 90%;
+    max-width: var(--sm-width);
   }
 }

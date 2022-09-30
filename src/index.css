@@ -4,6 +4,12 @@
   --sm-width : 90%;
   --md-width : 85%;
   --lg-width : 80%;
+
+  /* Color */
+  --primary : #d0051de7;
+  --background-color: #121212;
+  --white : #fff;
+  --text : rgb(216, 216, 216);
 }
 
 *{
@@ -13,11 +19,30 @@
   scroll-behavior: smooth;
 }
 
-body {
+#light{
+  --background-color: #efeff4;
+  --white : #000;
+  --text : rgb(22, 22, 22);
+}
+
+#light .main {
+  --background-color: #efeff4;
+}
+
+#dark{
+  --background-color: #121212;
+  --white : #fff;
+  --text : rgb(216, 216, 216);
+}
+
+#dark .main {
+  --background-color: #121212;
+}
+
+body .main{
   margin: 0;
-  background-color: #121212;
   font-family: 'Poppins', sans-serif;
-  /* overflow: hidden; */
+  background-color: var(--background-color);
 }
 
 li{

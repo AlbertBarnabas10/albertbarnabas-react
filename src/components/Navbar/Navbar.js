@@ -4,20 +4,17 @@ import { BiMenu } from "react-icons/bi";
 import { FiMoon, FiSun } from "react-icons/fi";
 import { NavbarData } from "./NavbarData";
 import { IconContext } from "react-icons";
+import { themeContext } from "../../App";
 import "./navbar.css";
 
-function Navbar() {
+function Navbar(props) {
   const [sideBar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sideBar);
 
-  const darkmode = () => {
-
-  }
-
   return (
     <>
-      <IconContext.Provider value={{ color: "#fff" }}>
+      <IconContext.Provider value={{ color: "var(--white)" }}>
         <div className="navbar">
           <div className="navbar-wrapper">
             <div className="navbar-container">
@@ -34,7 +31,7 @@ function Navbar() {
                   {NavbarData.map((item, index) => {
                     return (
                       <li key={index} className={item.className}>
-                        <a href={item.href} onClick={showSidebar} >
+                        <a href={item.href} onClick={showSidebar}>
                           <span>{item.title}</span>
                         </a>
                       </li>
@@ -44,10 +41,10 @@ function Navbar() {
               </nav>
             </div>
             <a className="nav-logo" href="#">
-                Albert<span style={{ color: "#d0051b"}}>.</span>
+              Albert<span style={{ color: "#d0051b" }}>.</span>
             </a>
             <div className="nav-darkmode">
-                <FiMoon />
+              <FiMoon onClick={() => props.toggleTheme()} />
             </div>
           </div>
         </div>

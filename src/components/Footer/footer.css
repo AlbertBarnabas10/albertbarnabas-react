@@ -5,21 +5,19 @@
     justify-content: space-between;
     height: 60px;
     align-items: center;
-    /* background-color:#fff; */
 }
 
 .footer-logo{
     font-family: 'Amatic SC', cursive;
     font-size: 28px;
-    color: #fff;
+    color: var(--white);
     width: 100px;
 }
 
 .footer-text{
-    color: #fff;
+    color: var(--white);
     width: 500px;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
 }
 
@@ -31,22 +29,22 @@
 .footer-social a{
     font-size: 20px;
     transition: 0.7s;
-    color: #fff;
+    color: var(--white);
     padding-left: 10px;
 }
 
 .footer-social a:hover{
-    color: #d0051de7;
+    color: var(--primary);
 }
 
 @media screen and (max-width: 1024px){
     .footer{
-        max-width: 80%;
+        max-width:var(--lg-width);
     }
 }
 @media screen and (max-width: 768px){
     .footer{
-        max-width: 85%;
+        max-width:var(--md-width);
     }
     .footer-text{
         text-align: center;
@@ -54,7 +52,7 @@
 }
 @media screen and (max-width: 426px){
     .footer{
-        max-width: 90%;
+        max-width: var(--sm-width);
     }
     .footer-logo{
         font-size: 15px;
