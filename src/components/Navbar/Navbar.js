@@ -4,10 +4,9 @@ import { BiMenu } from "react-icons/bi";
 import { FiMoon, FiSun } from "react-icons/fi";
 import { NavbarData } from "./NavbarData";
 import { IconContext } from "react-icons";
-import { themeContext } from "../../App";
 import "./navbar.css";
 
-function Navbar(props) {
+function Navbar({tes}) {
   const [sideBar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sideBar);
@@ -44,7 +43,7 @@ function Navbar(props) {
               Albert<span style={{ color: "#d0051b" }}>.</span>
             </a>
             <div className="nav-darkmode">
-              <FiMoon onClick={() => props.toggleTheme()} />
+              <FiMoon onClick={tes} />
             </div>
           </div>
         </div>
